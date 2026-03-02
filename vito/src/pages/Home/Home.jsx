@@ -3,6 +3,8 @@ import "./Home.css";
 import bgVideo from "./Assets/Video/video1.mp4";
 import aboutImg from "./Assets/Video/video2.gif"; // add your image
 import Navbar from "../../components/Navbar/Navbar";
+import Footer from "../../components/Footer/Footer";
+
 import service1 from "./Assets/images/1.avif"
 import service2 from "./Assets/images/2.avif"
 import service3 from "./Assets/images/3.avif"
@@ -12,7 +14,7 @@ import metals2 from "./Assets/images/6.avif"
 import metals3 from "./Assets/images/7.avif"
 import metals4 from "./Assets/images/8.avif"
 import metals5 from "./Assets/images/9.avif"
-import metalSupplyImg from "./Assets/images/10.avif" 
+import metalSupplyImg from "./Assets/images/10.avif"
 
 function Home() {
   return (
@@ -70,7 +72,7 @@ function Home() {
           </div>
 
           <div className="about-image">
-            <img src={aboutImg} alt="Subra Metals" />
+            <img src={aboutImg} alt="VITO Business Solutions" />
           </div>
         </div>
       </div>
@@ -96,7 +98,7 @@ function Home() {
                 <img src={service1} alt="Maintenance services" />              </div>
               <h3>Maintenance services</h3>
               <p>
-                At Subra Metals, a range of essential maintenance tasks is undertaken
+                At VITO Business Solutions, a range of essential maintenance tasks is undertaken
                 to ensure that equipment, facilities, and systems operate at peak performance.
               </p>
             </div>
@@ -108,7 +110,7 @@ function Home() {
               </div>
               <h3>Scrap Metal Supply</h3>
               <p>
-                At Subra Metals, we provide an extensive selection of scrap metals
+                At VITO Business Solutions, we provide an extensive selection of scrap metals
                 tailored for various industrial applications and projects.
               </p>
             </div>
@@ -135,7 +137,7 @@ function Home() {
         <div className="why-choose-overlay"></div>
         <div className="why-choose-container">
           <h2 className="why-choose-title">
-            Why Choose <span>Subra Metals</span>
+            Why Choose <span>VITO Business Solutions</span>
           </h2>
 
           <div className="why-choose-grid">
@@ -311,6 +313,7 @@ function Home() {
 
         </div>
       </div>
+      <Footer />
     </>
   );
 }
