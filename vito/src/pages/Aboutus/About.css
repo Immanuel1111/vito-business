@@ -1,6 +1,4 @@
-/* ===========================
-   HERO
-=========================== */
+/* ── Hero ── */
 .about-hero {
   width: 100%;
   height: 280px;
@@ -50,9 +48,7 @@
   line-height: 1.7;
 }
 
-/* ===========================
-   TRUSTED PARTNER
-=========================== */
+/* ── Trusted Partner ── */
 .about-partner {
   width: 100%;
   padding: 80px 20px;
@@ -86,18 +82,77 @@
   margin-bottom: 16px;
 }
 
+/* ── Circular Image with Arcs ── */
 .about-partner-image {
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.about-partner-image img {
-  width: 100%;
-  max-width: 460px;
+/* .circle-frame {
+  position: relative;
+  width: 380px;
   height: 380px;
-  object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* Navy blue outer arc */
+/* .arc-navy {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 14px solid transparent;
+  border-top-color: #2b2d5b;
+  border-right-color: #2b2d5b;
+  transform: rotate(30deg);
+  z-index: 1;
+} */
+
+/* Gold inner arc */
+/* .arc-gold {
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  border: 8px solid transparent;
+  border-top-color: #f5c518;
+  border-right-color: #f5c518;
+  transform: rotate(30deg);
+  z-index: 2;
+} */
+
+/* Circular image */
+.circle-img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
 }
 
+.circle-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .about-partner-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .circle-frame {
+    width: 280px;
+    height: 280px;
+  }
+
+  .circle-img {
+    width: 230px;
+    height: 230px;
+  }
+}

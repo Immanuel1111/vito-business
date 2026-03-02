@@ -5,13 +5,12 @@ import "./About.css";
 import aboutHero from "./images/1.webp";
 import partnerImg from "./images/2.avif";
 
-
 const About = () => {
   return (
     <>
       <Navbar />
 
-      {/* ── Hero Banner ── */}
+      {/* Hero Banner */}
       <div className="about-hero">
         <img src={aboutHero} alt="About Hero" className="about-hero-bg" />
         <div className="about-hero-overlay"></div>
@@ -21,7 +20,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* ── Trusted Partner ── */}
+      {/* Trusted Partner */}
       <section className="about-partner">
         <div className="about-partner-container">
 
@@ -38,18 +37,24 @@ const About = () => {
               enabling us to deliver tailored solutions that maximise value and efficiency.
               Whether you're in construction, manufacturing, or another industry, we are
               committed to being a reliable resource for all your scrap metal and maintenance
-              requirements. Our mission is to create lasting relationships with our valued
-              clients by consistently exceeding expectations and promoting sustainable
-              practices in every project we undertake.
+              requirements.
             </p>
           </div>
 
+          {/* Circular Image with Arc Decoration */}
           <div className="about-partner-image">
-            <img src={partnerImg} alt="Trusted Partner" />
+            <div className="circle-frame">
+              <div className="arc-navy"></div>
+              <div className="arc-gold"></div>
+              <div className="circle-img">
+                <img src={partnerImg} alt="Trusted Partner" />
+              </div>
+            </div>
           </div>
 
         </div>
       </section>
+
       <Footer />
     </>
   );
