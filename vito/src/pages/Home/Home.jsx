@@ -6,7 +6,14 @@ import Navbar from "../../components/Navbar/Navbar";
 import service1 from "./Assets/images/1.avif"
 import service2 from "./Assets/images/2.avif"
 import service3 from "./Assets/images/3.avif"
-import poster from "./Assets/images/4.avif"
+import bgVideo1 from "./Assets/Video/video3.mp4";
+import metals1 from "./Assets/images/5.avif"
+import metals2 from "./Assets/images/6.avif"
+import metals3 from "./Assets/images/7.avif"
+import metals4 from "./Assets/images/8.avif"
+import metals5 from "./Assets/images/9.avif"
+import metalSupplyImg from "./Assets/images/10.avif" 
+
 function Home() {
   return (
     <>
@@ -182,6 +189,128 @@ function Home() {
           </div>
         </div>
       </section>
+      <div className="hero-container1">
+        {/* Background Video */}
+        <video
+          className="hero-video1"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={bgVideo1} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Overlay (dark layer) */}
+        <div className="overlay1"></div>
+
+        {/* Content */}
+        <div className="metals-content">
+          <h2 className="metals-title">
+            Metals <span>We Accept</span>
+          </h2>
+
+          <div className="metals-grid">
+            <div className="metal-card">
+              <div className="metal-img">
+                <img src={metals1} alt="Ferrous Metals" />
+              </div>
+              <div className="metal-text">
+                <h3>Ferrous Metals</h3>
+                <p>
+                  We specialise in ferrous metals like steel and iron,
+                  known for their strength. Our recycling ensures these
+                  valuable materials are efficiently repurposed.
+                </p>
+              </div>
+            </div>
+
+            <div className="metal-card">
+              <div className="metal-img">
+                <img src={metals2} alt="Non-Ferrous Metals" />
+              </div>
+              <div className="metal-text">
+                <h3>Non-Ferrous Metals</h3>
+                <p>
+                  We accept non-ferrous metals including copper,
+                  aluminum, brass, lead and stainless steel.
+                </p>
+              </div>
+            </div>
+
+            <div className="metal-card">
+              <div className="metal-img">
+                <img src={metals3} alt="Mixed Metals" />
+              </div>
+              <div className="metal-text">
+                <h3>Mixed Metals</h3>
+                <p>
+                  We offer competitive pricing for all types of metals,
+                  ensuring the best value for your scrap.
+                </p>
+              </div>
+            </div>
+
+            <div className="metal-card">
+              <div className="metal-img">
+                <img src={metals4} alt="Steel & Iron" />
+              </div>
+              <div className="metal-text">
+                <h3>Steel & Iron</h3>
+                <p>
+                  From household appliances to industrial scrap,
+                  we recycle all grades of steel and iron.
+                </p>
+              </div>
+            </div>
+
+            <div className="metal-card">
+              <div className="metal-img">
+                <img src={metals5} alt="Copper & Brass" />
+              </div>
+              <div className="metal-text">
+                <h3>Copper & Brass</h3>
+                <p>
+                  High value metals like copper and brass are
+                  meticulously processed and recycled.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="metal-supply-section">
+        <div className="metal-supply-container">
+
+          {/* LEFT - Text */}
+          <div className="metal-supply-text">
+            <h2>Metal <span>Supply</span></h2>
+            <p>
+              We provide high-quality scrap metals for various maintenance projects.
+              Offering eco-friendly solutions for both individuals and businesses,
+              we ensure competitive pricing, efficient services, and environmentally
+              responsible practices. Our extensive inventory is carefully curated to
+              meet diverse project needs, allowing you to find the perfect materials
+              with ease. Committed to exceptional customer satisfaction, we collaborate
+              closely with clients to deliver tailored solutions that fit their specific
+              requirements.
+            </p>
+            <p className="metal-supply-bold">
+              Choose us as your trusted partner for sustainable practices and reliable
+              metal supply solutions!
+            </p>
+          </div>
+
+          {/* RIGHT - Image with Dots */}
+          <div className="metal-supply-image-wrapper">
+            <div className="metal-supply-circle">
+              <img src={metalSupplyImg} alt="Metal Supply" />
+            </div>
+          </div>
+
+        </div>
+      </div>
     </>
   );
 }
