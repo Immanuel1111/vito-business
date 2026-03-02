@@ -1,0 +1,443 @@
+/* ── Hero ── */
+.about-hero {
+  width: 100%;
+  height: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.about-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.52);
+  z-index: 1;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.about-hero-content h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.about-hero-content p {
+  font-size: 15px;
+  color: #e0e0e0;
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* ===== MAINTENANCE SECTION ===== */
+.maintenance-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.maintenance-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ── LEFT Text ── */
+.maintenance-text {
+  flex: 1;
+}
+
+.maintenance-text h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.maintenance-text h2 span {
+  color: #5a5acb;
+}
+
+.maintenance-text p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* ── Yellow Feature Boxes ── */
+.maintenance-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;                  /* ✅ thin divider between boxes */
+  margin-top: 30px;
+  background: #e6b800;       /* ✅ divider color shows through gap */
+  border-radius: 6px;
+  overflow: hidden;          /* ✅ clips children to rounded corners */
+}
+
+.feature-box {
+  background: #FFD700;
+  padding: 28px 14px;
+  text-align: center;
+  cursor: default;
+}
+
+.feature-box span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.6;
+}
+
+/* ── RIGHT Image ── */
+.maintenance-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.maintenance-image img {
+  width: 100%;
+  max-width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+/* ===== SCRAP METAL SUPPLY SECTION ===== */
+.scrap-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #3a3a3a;       /* ✅ dark background */
+}
+
+.scrap-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ── LEFT Image ── */
+.scrap-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.scrap-image img {
+  width: 100%;
+  max-width: 460px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* ── RIGHT Text ── */
+.scrap-text {
+  flex: 1;
+}
+
+.scrap-text h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.scrap-text h2 span {
+  color: #00bcd4;            /* ✅ cyan color matching screenshot */
+}
+
+.scrap-text p {
+  font-size: 15px;
+  color: #cccccc;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+/* ── Yellow Feature Boxes ── */
+.scrap-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin-top: 30px;
+  background: #e6b800;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 480px;          /* ✅ matches screenshot width */
+}
+/* ===== SCRAP METAL SERVICES SECTION ===== */
+.scrap-services-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.scrap-services-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* ── LEFT Text ── */
+.scrap-services-text {
+  flex: 1;
+}
+
+.scrap-services-text h2 {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.scrap-services-text h2 span {
+  color: #5a5acb;
+}
+
+.scrap-services-text p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+/* ── Yellow Feature Boxes ── */
+.scrap-services-features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  margin-top: 30px;
+  background: #e6b800;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* ── RIGHT Image ── */
+.scrap-services-image {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.scrap-services-image img {
+  width: 100%;
+  max-width: 480px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+/* ── Stats Overlay Box ── */
+.scrap-stats-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #3d3d9e;       /* ✅ purple/navy overlay */
+  border-radius: 0 12px 12px 12px;
+  padding: 24px 36px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.stat-item h3 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 4px 0;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin: 0;
+}
+/* ===== INDUSTRIES WE SERVE ===== */
+.industries-section {
+  position: relative;
+  width: 100%;
+  min-height: 480px;
+  padding: 70px 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Background Image ── */
+.industries-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+/* ── Dark Overlay ── */
+.industries-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 1;
+}
+
+/* ── Content (sits above overlay) ── */
+.industries-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+/* ── Title ── */
+.industries-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.industries-title span {
+  color: #00bcd4;
+}
+
+/* ── Front Video Wrapper ── */
+.industries-video-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Front Video ── */
+.industries-front-video {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .industries-title {
+    font-size: 26px;
+  }
+
+  .industries-front-video {
+    height: 220px;
+  }
+}
+
+@media (max-width: 500px) {
+  .industries-front-video {
+    height: 180px;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .scrap-services-container {
+    flex-direction: column;
+  }
+
+  .scrap-services-text h2 {
+    font-size: 28px;
+  }
+
+  .scrap-services-features {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .scrap-services-image img {
+    height: 280px;
+    max-width: 100%;
+  }
+
+  .scrap-stats-box {
+    padding: 16px 24px;
+    gap: 24px;
+  }
+
+  .stat-item h3 {
+    font-size: 26px;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .scrap-container {
+    flex-direction: column;
+  }
+
+  .scrap-text h2 {
+    font-size: 28px;
+  }
+
+  .scrap-features {
+    grid-template-columns: 1fr;
+    gap: 3px;
+    max-width: 100%;
+  }
+
+  .scrap-image img {
+    height: 280px;
+  }
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .maintenance-container {
+    flex-direction: column;
+  }
+
+  .maintenance-text h2 {
+    font-size: 28px;
+  }
+
+  .maintenance-features {
+    grid-template-columns: 1fr;
+    gap: 3px;
+  }
+
+  .maintenance-image img {
+    height: 280px;
+  }
+}

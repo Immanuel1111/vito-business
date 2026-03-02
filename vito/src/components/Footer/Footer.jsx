@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "./logo.jpg"; // Updated to local logo.jpg
 
@@ -22,10 +23,10 @@ function Footer() {
         <div className="footer-links">
           <h4>QUICK LINKS</h4>
           <ul>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/about">ABOUT US</a></li>
-            <li><a href="/services">OUR SERVICES</a></li>
-            <li><a href="/contact">CONTACT US</a></li>
+            <li><Link to="/">HOME</Link></li>
+            <li><Link to="/about">ABOUT US</Link></li>
+            <li><Link to="/services">OUR SERVICES</Link></li>
+            <li><Link to="/contact">CONTACT US</Link></li>
           </ul>
         </div>
 

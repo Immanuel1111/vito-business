@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 import logo from "./images/logo.jpg";
 
@@ -9,10 +10,10 @@ const Navbar = () => {
                 <img src={logo} alt="Subra Metals Logo" />
             </div>
             <ul className="navbar-links">
-                <li className="active"><a href="/">Home</a></li>
-                <li><a href="/about">About Us</a></li>
-                <li><a href="/Service">Our Services</a></li>
-                <li><a href="/contact">Contact Us</a></li>
+                <li className="active"><Link to="/">Home</Link></li>
+                <li><Link to="/about">About Us</Link></li>
+                <li><Link to="/services">Our Services</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
             </ul>
         </nav>
     );
