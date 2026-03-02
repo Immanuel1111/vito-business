@@ -50,7 +50,6 @@
 
 /* ── Trusted Partner ── */
 .about-partner {
-  width: 100%;
   padding: 80px 20px;
   background: #ffffff;
 }
@@ -138,8 +137,120 @@
   height: 100%;
   object-fit: cover;
 }
+/* ===== OUR PROJECTS ===== */
+.projects-section {
+  width: 1;
+  padding:1px 20px 60px 20px;   /* ✅ controlled bottom padding */
+  background: #f5f5a0;
+}
+
+.projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 38px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin-bottom: 20px;
+}
+
+.projects-title span {
+  color: #5a5acb;
+}
+
+.projects-subtitle {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.8;
+  max-width: 750px;
+  margin: 0 auto 60px auto;
+}
+
+/* ── Grid ── */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: start;        /* ✅ each card starts at top, no stretching */
+}
+
+/* ── Card ── */
+.project-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: visible;
+  display: flex;             /* ✅ flex column keeps card tight */
+  flex-direction: column;
+}
+
+/* ── Image ── */
+.project-card-img {
+  width: 100%;
+  height: 280px;
+  border-radius: 20px;
+  overflow: hidden;
+  flex-shrink: 0;            /* ✅ image never compresses */
+}
+
+.project-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ── Overlapping Text Box ── */
+.project-card-text {
+  position: relative;
+  width: 88%;
+  margin: -80px auto 0 auto;  /* ✅ overlap amount */
+  background: #dcdcf3;
+  padding: 30px 28px 36px 28px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  z-index: 2;
+  flex-shrink: 0;            /* ✅ text box never compresses */
+}
+
+.project-card-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #5a5acb;
+  margin-bottom: 16px;
+}
+
+.project-card-text p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.8;
+  margin: 0;                 /* ✅ removes any default bottom margin */
+}
 
 /* ── Responsive ── */
+@media (max-width: 992px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .project-card-img {
+    height: 240px;
+  }
+
+  .project-card-text {
+    width: 90%;
+    margin-top: -80px;
+  }
+
+  .projects-title {
+    font-size: 30px;
+  }
+}
+
 @media (max-width: 900px) {
   .about-partner-container {
     flex-direction: column;

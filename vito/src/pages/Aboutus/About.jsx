@@ -4,6 +4,11 @@ import Footer from "../../components/Footer/Footer";
 import "./About.css";
 import aboutHero from "./images/1.webp";
 import partnerImg from "./images/2.avif";
+import  img from "./images/3.avif";
+import  img1 from "./images/4.avif";
+
+
+
 
 const About = () => {
   return (
@@ -54,7 +59,60 @@ const About = () => {
 
         </div>
       </section>
+      {/* Our Projects Section */}
+      <section className="projects-section">
+        <div className="projects-container">
 
+          <h2 className="projects-title">Our <span>Projects</span></h2>
+          <p className="projects-subtitle">
+            Showcasing our expertise in scrap metal supply and maintenance. Our dedicated team
+            ensures that every project, whether small or large, receives the highest level of
+            professionalism, efficiency, and environmental care. Our commitment to reducing waste
+            and repurposing valuable materials makes us a trusted partner for businesses and individuals.
+          </p>
+
+          <div className="projects-grid">
+
+            {/* Card 1 - Metal Supply */}
+            <div className="project-card">
+              <div className="project-card-img">
+                <img src={img} alt="Metal Supply" />
+              </div>
+              <div className="project-card-text">
+                <h3>Metal Supply</h3>
+                <p>
+                  Subra Metals is a trusted supplier of high-quality scrap steel and other metals
+                  for industrial use. Our reliable network allows us to source, process, and deliver
+                  a wide range of metals to meet your project demands. Whether you need steel for
+                  construction or other ferrous and non-ferrous metals for manufacturing, we guarantee
+                  responsibly sourced metals through eco-friendly recycling processes. Additionally,
+                  we offer competitive prices and on-time delivery to ensure your operations run smoothly.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2 - Maintenance Works */}
+            <div className="project-card">
+              <div className="project-card-img">
+                <img src={img1} alt="Maintenance Works" />
+              </div>
+              <div className="project-card-text">
+                <h3>Maintenance Works</h3>
+                <p>
+                  We specialise in industrial maintenance contracts that ensure the longevity and
+                  efficiency of your equipment. Our services include preventative maintenance with
+                  regular inspections and service schedules to prevent breakdowns and extend the
+                  life of your machinery. We also provide emergency repairs, delivering quick and
+                  efficient solutions to reduce downtime and restore productivity. Additionally,
+                  we offer tailored contracts with flexible maintenance solutions designed to fit
+                  the specific needs of your business
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
       <Footer />
     </>
   );
