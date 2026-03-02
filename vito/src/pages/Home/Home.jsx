@@ -6,6 +6,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import service1 from "./Assets/images/1.avif"
 import service2 from "./Assets/images/2.avif"
 import service3 from "./Assets/images/3.avif"
+import poster from "./Assets/images/4.avif"
 function Home() {
   return (
     <>
@@ -122,7 +123,65 @@ function Home() {
           <button className="services-btn">Know More</button>
         </div>
       </div >
+      {/* NEW SECTION - Why Choose Section */}
+      <section className="why-choose-section">
+        <div className="why-choose-overlay"></div>
+        <div className="why-choose-container">
+          <h2 className="why-choose-title">
+            Why Choose <span>Subra Metals</span>
+          </h2>
 
+          <div className="why-choose-grid">
+            {/* Card 1 */}
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <h3>Sustainable Practices</h3>
+                </div>
+                <div className="flip-card-back">
+                  <p>We prioritize eco-friendly recycling processes to minimize environmental impact and promote sustainability.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <h3>Competitive Prices</h3>
+                </div>
+                <div className="flip-card-back">
+                  <p>We offer the best market rates for your scrap metal, ensuring you get the maximum value for your materials.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <h3>Professional Team</h3>
+                </div>
+                <div className="flip-card-back">
+                  <p>Our experienced professionals provide efficient service and expert advice for all your recycling needs.</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="flip-card">
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <h3>Trusted Partnerships</h3>
+                </div>
+                <div className="flip-card-back">
+                  <p>We build long-term relationships through transparency, reliability, and exceptional customer service.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
