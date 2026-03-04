@@ -55,6 +55,48 @@
   background: #fff;
 }
 
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .contact-section {
+    padding: 60px 40px;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .contact-left {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .contact-info-list {
+    align-items: center;
+  }
+
+  .contact-info-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-form-wrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-form {
+    padding: 24px 20px;
+  }
+}
+
 /* ── Left Side ── */
 .contact-left {
   flex: 1;

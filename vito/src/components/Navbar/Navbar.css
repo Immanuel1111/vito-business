@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body {
     margin: 0px;
     padding: 0px;
@@ -93,10 +94,11 @@ body {
 /* Mobile */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 15px 5%;
-        position: relative;
+        padding: 10px 5%;
+    }
+
+    .navbar-logo img {
+        height: 60px;
     }
 
     .hamburger {
@@ -104,24 +106,39 @@ body {
     }
 
     .navbar-links {
-        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
         width: 100%;
+        background-color: white;
         flex-direction: column;
+        align-items: center;
         gap: 0;
         margin: 0;
-        padding: 10px 0 15px;
-        border-top: 1px solid #eee;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+        border-top: 1px solid #f0f0f0;
     }
 
     .navbar-links.open {
         display: flex;
+        max-height: 300px;
+        /* Adjust based on content */
+        padding: 20px 0;
     }
 
     .navbar-links li {
-        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
     }
 
     .navbar-links a {
-        font-size: 15px;
+        font-size: 18px;
+        display: block;
+        width: 100%;
     }
 }
