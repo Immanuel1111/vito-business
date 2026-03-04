@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import "./Contact.css";
@@ -6,8 +6,36 @@ import aboutHero from "./images/1.webp";
 import locateIcon from "./images/locate.webp";
 import hoursIcon from "./images/hours.webp";
 import mailIcon from "./images/mail.webp";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const form = useRef();
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [loading, setLoading] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus({ type: '', message: '' });
+
+    emailjs.sendForm(
+      'service_uxb0qeq', // Replace with your Service ID
+      'template_r7kv5gp', // Replace with your Template ID
+      form.current,
+      'TpYrNuiJ6SqyCIu5A' // Replace with your Public Key
+    )
+      .then((result) => {
+        setStatus({ type: 'success', message: 'Your enquiry has been sent successfully!' });
+        form.current.reset();
+      }, (error) => {
+        setStatus({ type: 'error', message: 'Something went wrong. Please try again later.' });
+        console.error('EmailJS Error:', error.text);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
   return (
     <>
       <Navbar />
@@ -62,29 +90,38 @@ const Contact = () => {
 
         {/* Right Side - Form */}
         <div className="contact-form-wrapper">
-          <div className="contact-form">
+          <form className="contact-form" ref={form} onSubmit={sendEmail}>
             <div className="form-group">
               <label>Your First Name*</label>
-              <input type="text" placeholder="Enter your first name" />
+              <input type="text" name="first_name" placeholder="Enter your first name" required />
             </div>
             <div className="form-group">
               <label>Last Name*</label>
-              <input type="text" placeholder="Last Name" />
+              <input type="text" name="last_name" placeholder="Last Name" required />
             </div>
             <div className="form-group">
               <label>Phone Number*</label>
-              <input type="tel" placeholder="Phone Number" />
+              <input type="tel" name="phone_number" placeholder="Phone Number" required />
             </div>
             <div className="form-group">
               <label>Your Email Address*</label>
-              <input type="email" placeholder="Enter your email address" />
+              <input type="email" name="user_email" placeholder="Enter your email address" required />
             </div>
             <div className="form-group">
               <label>Your Message</label>
-              <textarea placeholder="Describe your needs here" rows={4}></textarea>
+              <textarea name="message" placeholder="Describe your needs here" rows={4}></textarea>
             </div>
-            <button className="submit-btn">Submit Your Enquiry</button>
-          </div>
+
+            {status.message && (
+              <div className={`form-status ${status.type}`}>
+                {status.message}
+              </div>
+            )}
+
+            <button type="submit" className="submit-btn" disabled={loading}>
+              {loading ? 'Sending...' : 'Submit Your Enquiry'}
+            </button>
+          </form>
         </div>
       </div>
 
