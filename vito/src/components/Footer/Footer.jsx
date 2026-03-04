@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
-import logo from "./logo.jpg"; // Updated to local logo.jpg
+import logo from "./logo.jpg";
+import emailjs from '@emailjs/browser';
 
 function Footer() {
+  const form = useRef();
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [loading, setLoading] = useState(false);
+
+  const sendNewsletter = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus({ type: '', message: '' });
+
+    emailjs.sendForm(
+      'service_jcww95c',
+      'template_eener7u',
+      form.current,
+      'TpYrNuiJ6SqyCIu5A'
+    )
+      .then((result) => {
+        setStatus({ type: 'success', message: 'Subscribed successfully!' });
+        form.current.reset();
+      }, (error) => {
+        setStatus({ type: 'error', message: 'Failed to subscribe. Try again.' });
+        console.error('EmailJS Error:', error.text);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -54,12 +82,23 @@ function Footer() {
         <div className="footer-newsletter">
           <h4>SUBSCRIBE TO OUR NEWSLETTER</h4>
           <p>Enter your email address</p>
-          <input
-            type="email"
-            placeholder="Your email for enquiries"
-            className="footer-input"
-          />
-          <button className="footer-btn">Submit your request now</button>
+          <form ref={form} onSubmit={sendNewsletter}>
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Your email for enquiries"
+              className="footer-input"
+              required
+            />
+            {status.message && (
+              <div className={`footer-status ${status.type}`}>
+                {status.message}
+              </div>
+            )}
+            <button type="submit" className="footer-btn" disabled={loading}>
+              {loading ? 'Subscribing...' : 'Submit your request now'}
+            </button>
+          </form>
         </div>
 
       </div>
