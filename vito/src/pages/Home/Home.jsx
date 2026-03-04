@@ -39,7 +39,7 @@ function Home() {
 
         <div className="hero-content">
           <h1 className="hero-title">
-            Your Sustainable Scrap Metal <br /> Recycling Partner
+            Your Sustainable Scrap Metal  Recycling Partner
           </h1>
 
           <p className="hero-subtitle">
@@ -148,7 +148,7 @@ function Home() {
                   <h3>Sustainable Practices</h3>
                 </div>
                 <div className="flip-card-back">
-                  <p>We prioritize eco-friendly recycling processes to minimize environmental impact and promote sustainability.</p>
+                  <p>We focus on environmentally friendly recycling methods, reducing landfill waste and conserving natural resources.</p>
                 </div>
               </div>
             </div>
@@ -160,7 +160,7 @@ function Home() {
                   <h3>Competitive Prices</h3>
                 </div>
                 <div className="flip-card-back">
-                  <p>We offer the best market rates for your scrap metal, ensuring you get the maximum value for your materials.</p>
+                  <p>We offer great value for your scrap steel and metals, ensuring you receive the best return for your recyclable materials.</p>
                 </div>
               </div>
             </div>
@@ -172,7 +172,7 @@ function Home() {
                   <h3>Professional Team</h3>
                 </div>
                 <div className="flip-card-back">
-                  <p>Our experienced professionals provide efficient service and expert advice for all your recycling needs.</p>
+                  <p>Our skilled professionals are adept in both recycling and industrial maintenance, ensuring high-quality service.</p>
                 </div>
               </div>
             </div>
@@ -184,7 +184,7 @@ function Home() {
                   <h3>Trusted Partnerships</h3>
                 </div>
                 <div className="flip-card-back">
-                  <p>We build long-term relationships through transparency, reliability, and exceptional customer service.</p>
+                  <p>We have built lasting relationships with businesses and individuals, through our commitment to integrity and quality service.</p>
                 </div>
               </div>
             </div>

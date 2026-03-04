@@ -40,7 +40,8 @@ function Footer() {
             </li>
             <li>
               <span className="footer-icon">📍</span>
-              <a href="#">Perth, Western Australia</a>
+              <a href="https://www.google.com/maps/place/56+Forrest+St,+Northam+WA+6401,+Australia/@-31.6508807,116.6650713,17z/data=!3m1!4b1!4m6!3m5!1s0x2a33317d64f3e04f:0x8f221a717350f609!8m2!3d-31.6508807!4d116.6650713!16s%2Fg%2F11q2n8gpz0?entry=ttu&g_ep=EgoyMDI2MDMwMS4xIKXMDSoASAFQAw%3D%3D">56 Forrest street
+                Northam 6401 WA</a>
             </li>
             <li>
               <span className="footer-icon">🕐</span>
@@ -65,7 +66,7 @@ function Footer() {
 
       {/* Bottom Bar */}
       <div className="footer-bottom">
-        <p>© 2024. All rights reserved.</p>
+        <p>© 2026. All rights reserved.</p>
       </div>
     </footer>
   );

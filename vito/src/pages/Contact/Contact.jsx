@@ -3,6 +3,9 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import "./Contact.css";
 import aboutHero from "./images/1.webp";
+import locateIcon from "./images/locate.webp";
+import hoursIcon from "./images/hours.webp";
+import mailIcon from "./images/mail.webp";
 
 const Contact = () => {
   return (
@@ -16,6 +19,7 @@ const Contact = () => {
           <p>Connect with us for personalised support and expert advice.</p>
         </div>
       </div>
+
       <div className="contact-section">
         {/* Left Side */}
         <div className="contact-left">
@@ -25,33 +29,33 @@ const Contact = () => {
             Contact us today for a free consultation or to request a quote.
           </p>
           <p className="contact-desc">
-            Our team at Subra Metals is here to provide expert assistance and ensure you receive the
+            Our team at Vito Business Solutions Pty Ltd is here to provide expert assistance and ensure you receive the
             best solutions tailored to your needs.
           </p>
 
           <div className="contact-info-list">
             <div className="contact-info-item">
-              <span className="contact-icon">📍</span>
-              <div>
+              <img src={locateIcon} alt="Locate" className="contact-icon" />
+              <div className="contact-info-text">
                 <h3>Locate Us @</h3>
-                <a href="#">Perth, Western Australia</a>
+                <a href="https://www.google.com/maps/place/56+Forrest+St,+Northam+WA+6401,+Australia/@-31.6508807,116.6650713,17z/data=!3m1!4b1!4m6!3m5!1s0x2a33317d64f3e04f:0x8f221a717350f609!8m2!3d-31.6508807!4d116.6650713!16s%2Fg%2F11q2n8gpz0?entry=ttu&g_ep=EgoyMDI2MDMwMS4xIKXMDSoASAFQAw%3D%3D">56 Forrest street
+                  Northam 6401 WA</a>
               </div>
             </div>
 
             <div className="contact-info-item">
-              <span className="contact-icon">🕐</span>
-              <div>
+              <img src={hoursIcon} alt="Working Hours" className="contact-icon" />
+              <div className="contact-info-text">
                 <h3>Working Hours</h3>
                 <p>Mon-Fri 9am to 6pm</p>
               </div>
             </div>
 
             <div className="contact-info-item">
-              <span className="contact-icon">✉</span>
-              <div>
+              <img src={mailIcon} alt="Mail" className="contact-icon" />
+              <div className="contact-info-text">
                 <h3>Mail Us @</h3>
-                <a href="mailto:info@subrametals.com.au">info@subrametals.com.au</a>
-              </div>
+                <a href="mailto:info@vitobusiness.com.au">info@vitobusiness.com.au</a>              </div>
             </div>
           </div>
         </div>
@@ -83,9 +87,10 @@ const Contact = () => {
           </div>
         </div>
       </div>
+
       <Footer />
     </>
   );
 };
 
-export default Contact
+export default Contact;
