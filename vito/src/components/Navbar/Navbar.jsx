@@ -13,6 +13,7 @@ const Navbar = () => {
         <nav className="navbar">
             <div className="navbar-logo">
                 <img src={logo} alt="Subra Metals Logo" />
+                <h3>Vito Buisness Solutions</h3>
             </div>
 
             <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>

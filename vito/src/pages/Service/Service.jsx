@@ -30,7 +30,7 @@ const Service = () => {
           <div className="maintenance-text">
             <h2>Maintenance <span>Services</span></h2>
             <p>
-              At Subra Metals, a range of essential maintenance tasks is undertaken to
+              At Vito Business Solutions, a range of essential maintenance tasks is undertaken to
               ensure that equipment, facilities, and systems operate at peak
               performance. Our services include both preventative and corrective
               measures designed to minimise downtime and extend the lifespan of your assets.
@@ -61,7 +61,7 @@ const Service = () => {
           <div className="scrap-text">
             <h2>Scrap <span>Metal Supply</span></h2>
             <p>
-              At Subra Metals, we provide an extensive selection of scrap metals
+              At Vito Business Solutions, we provide an extensive selection of scrap metals
               tailored for various industrial applications and projects. Our inventory
               includes a diverse range of both ferrous and non-ferrous metals,
               ensuring that you have access to high-quality materials essential for your operations.

@@ -21,7 +21,7 @@ const About = () => {
         <div className="about-hero-overlay"></div>
         <div className="about-hero-content">
           <h1>About Us</h1>
-          <p>Subra Metals: Your trusted partner for premium scrap metal recycling and eco-friendly solutions.</p>
+          <p>Vito Business Solutions: Your trusted partner for premium scrap metal recycling and eco-friendly solutions.</p>
         </div>
       </div>
 
@@ -32,7 +32,7 @@ const About = () => {
           <div className="about-partner-text">
             <h2><strong>Your Trusted Partner</strong> in Scrap Metal</h2>
             <p>
-              At Subra Metals, we specialise in providing high quality scrap metals along
+              At Vito Business Solutions, we specialise in providing high quality scrap metals along
               with comprehensive maintenance services to foster a sustainable future. Our
               dedication to excellence ensures that we supply only the finest materials,
               sourced responsibly through eco-friendly practices.
@@ -104,8 +104,7 @@ const About = () => {
                   regular inspections and service schedules to prevent breakdowns and extend the
                   life of your machinery. We also provide emergency repairs, delivering quick and
                   efficient solutions to reduce downtime and restore productivity. Additionally,
-                  we offer tailored contracts with flexible maintenance solutions designed to fit
-                  the specific needs of your business
+                  we offer tailored contracts with flexible maintenance solutions designed to fit.
                 </p>
               </div>
             </div>

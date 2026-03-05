@@ -19,7 +19,6 @@
     height: auto;
     transform: translate(-50%, -50%);
     object-fit: cover;
-    /* Important for full cover like your design */
     z-index: -2;
     animation: zoomFade 2.5s ease-out forwards;
 }
@@ -31,7 +30,6 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.6);
-    /* Slightly lighter overlay for better visibility */
     z-index: -1;
 }
 
@@ -52,7 +50,6 @@
     margin-bottom: 1.5rem;
     line-height: 1.2;
     color: rgb(247, 207, 105);
-    /* Gold/Yellow color from image */
     letter-spacing: -0.02em;
     animation: fadeInDown 1.2s ease-out 0.4s both;
 }
@@ -453,7 +450,7 @@
 .metals-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    /* 6 equal columns as base */
+ 
     justify-items: center;
     align-items: start;
     gap: 60px 20px;

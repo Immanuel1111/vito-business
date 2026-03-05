@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import bgVideo from "./Assets/Video/video1.mp4";
-import aboutImg from "./Assets/Video/video2.gif"; // add your image
+import aboutImg from "./Assets/Video/video2.gif"; 
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 
@@ -19,10 +19,8 @@ import metalSupplyImg from "./Assets/images/10.avif"
 function Home() {
   return (
     <>
-      {/* Navbar on top */}
       <Navbar />
 
-      {/* Hero Section */}
       <div className="hero-container">
         <video
           className="hero-video"
@@ -52,7 +50,6 @@ function Home() {
         </div>
       </div>
 
-      {/* NEXT DIV - About Section */}
       <div className="about-section">
         <div className="about-container">
           <div className="about-text">
@@ -68,7 +65,7 @@ function Home() {
               professionalism, efficiency, and environmental care.
             </p>
 
-            <button className="about-btn">Learn more</button>
+            <a href="/about"><button className="about-btn">Learn more</button></a>
           </div>
 
           <div className="about-image">
@@ -129,7 +126,7 @@ function Home() {
 
           </div>
 
-          <button className="services-btn">Know More</button>
+           <a href="/about"><button className="services-btn">Know More</button></a>
         </div>
       </div >
       {/* NEW SECTION - Why Choose Section */}
