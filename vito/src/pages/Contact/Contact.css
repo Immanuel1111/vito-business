@@ -45,6 +45,54 @@
   margin: 0;
 }
 
+/* ── Person Details Section ── */
+.person-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 80px;
+  gap: 60px;
+  background: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.person-details-left {
+  flex: 1.2;
+}
+
+.person-details-left h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #2c2c2c;
+  margin-bottom: 20px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+.person-details-left p {
+  font-size: 1.05rem;
+  color: #4a4a4a;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.person-details-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.person-details-right img {
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  /* Optional subtle shadow just in case */
+}
+
 /* ── Contact Section ── */
 .contact-section {
   display: flex;
@@ -57,16 +105,29 @@
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {
-  .contact-section {
+
+  .contact-section,
+  .person-details {
     padding: 60px 40px;
     gap: 40px;
   }
 }
 
 @media (max-width: 768px) {
-  .contact-section {
+
+  .contact-section,
+  .person-details {
     flex-direction: column;
     padding: 40px 20px;
+  }
+
+  .person-details-left {
+    text-align: center;
+  }
+
+  .person-details-left h1 {
+    font-size: 2.5rem;
+    white-space: normal;
   }
 
   .contact-left {
@@ -94,6 +155,12 @@
 
   .contact-form {
     padding: 24px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .person-details-left h1 {
+    font-size: 2rem;
   }
 }
 

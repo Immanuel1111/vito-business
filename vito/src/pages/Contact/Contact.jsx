@@ -7,6 +7,7 @@ import locateIcon from "./images/locate.webp";
 import hoursIcon from "./images/hours.webp";
 import mailIcon from "./images/mail.webp";
 import emailjs from '@emailjs/browser';
+import r1Image from "./images/r1.jpeg";
 
 const Contact = () => {
   const form = useRef();
@@ -47,7 +48,18 @@ const Contact = () => {
           <p>Connect with us for personalised support and expert advice.</p>
         </div>
       </div>
+      <div className="person-details">
+        <div className="person-details-left">
+          <h1>Sahaya Antony Monish</h1>
+          <p>
+            Hi, I’m Sahaya Antony Monish. From the shores of Kanyakumari to the skies of Dubai, I am the first person based in Dubai to receive a commercial airline license. I am now on a mission to transform Tamil Nadu into a global aviation hub and to empower Indian entrepreneurs worldwide through innovative ventures in aviation, business, and global trade.
 
+          </p>
+        </div>
+        <div className="person-details-right">
+          <img src={r1Image} alt="Sahaya Antony Monish" />
+        </div>
+      </div>
       <div className="contact-section">
         {/* Left Side */}
         <div className="contact-left">
