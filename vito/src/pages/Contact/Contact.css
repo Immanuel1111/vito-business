@@ -102,6 +102,10 @@
   gap: 60px;
   background: #fff;
 }
+a{
+  color: black;
+  text-decoration: none;
+}
 
 /* ── Responsive ── */
 @media (max-width: 1024px) {

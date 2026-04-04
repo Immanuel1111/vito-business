@@ -50,9 +50,15 @@ const Contact = () => {
       </div>
       <div className="person-details">
         <div className="person-details-left">
-          <h1>Sahaya Antony Monish</h1>
+          <h1>Sahaya Antony Monish (CEO)</h1>
           <p>
-            Hi, I’m Sahaya Antony Monish. From the shores of Kanyakumari to the skies of Dubai, I am the first person based in Dubai to receive a commercial airline license. I am now on a mission to transform Tamil Nadu into a global aviation hub and to empower Indian entrepreneurs worldwide through innovative ventures in aviation, business, and global trade.
+            “Business should uplift people, not just build profit. True success lies in impact <br />— when others rise with you.”
+            <br />
+            <a href="https://www.sahayaantonymonish.com" target="_blank" rel="noopener noreferrer">
+              sahayaantonymonish.com
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            Contact No: +61 467 412 775
 
           </p>
         </div>
